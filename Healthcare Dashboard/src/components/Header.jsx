@@ -1,7 +1,7 @@
 import { Bell, Plus, Search } from 'lucide-react'
 import styles from '../styles/Header.module.css';
 import React from 'react'
-import userProfileImg from '../assets/userProfile.png'
+import userProfileImg from '../assets/UserProfile.png'
 
 const Header = () => {
   return (
