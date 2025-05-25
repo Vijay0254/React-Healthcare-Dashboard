@@ -1,0 +1,28 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 25px;
+}
+
+.nameIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 39px;
+}
+
+.nameIconContainer p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nameIconContainer span {
+    font-size: 18px;
+}
+
+.timeDoctorContainer {
+    font-size: 12px;
+    font-weight: 700;
+}

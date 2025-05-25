@@ -1,0 +1,250 @@
+.humanBodyContainer {
+    position: relative;
+}
+
+.humanBodyContainer img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.turnImg{
+    position: absolute;
+    bottom: -27px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.zoomInIcon {
+    position: absolute;
+    top: -20px;
+    right: -70px;
+    width: 50px;
+    height: 50px;
+    color: #a4a8b1;
+}
+
+.scannerBox {
+    width: 43px;
+    height: 48px;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(96, 126, 255, 0) 30%, var(--secondary-color) 40%, rgba(96, 126, 255, 0) 70%);
+}
+
+.scannerBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--secondary-color);
+    border-left: 2px solid var(--secondary-color);
+    border-top-left-radius: 6px;
+}
+
+.scannerBox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    border-top-right-radius: 6px;
+}
+
+.bottomLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    border-left: 2px solid var(--secondary-color);
+    border-bottom-left-radius: 6px;
+}
+
+.bottomRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    border-bottom-right-radius: 6px;
+}
+
+.healthyHeartIndicator {
+    position: absolute;
+    top: 62px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.healthyHeartBox {
+    display: flex;
+    gap: 5px;
+    width: max-content;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 7px 10px;
+    background-color: var(--secondary-color);
+}
+
+.healthyLegIndicator {
+    position: absolute;
+    top: 250px;
+    left: -73px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.healthyLegBox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 7px 10px;
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 1376px) {
+    .scannerBox {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .scannerBox::before {
+        width: 8px;
+        height: 8px;
+    }
+
+    .scannerBox::after {
+        width: 8px;
+        height: 8px;
+    }
+
+    .bottomLeft {
+        width: 8px;
+        height: 8px;
+    } 
+
+    .bottomRight {
+        width: 8px;
+        height: 8px;
+    }
+
+    .healthyHeartIndicator {
+        top: 69px;
+        left: 100px;
+    }
+
+    .healthyHeartBox {
+        font-size: 12px;
+        padding: 5px 8px;
+        width: max-content;
+    }  
+
+    .healthyLegBox {
+        font-size: 12px;
+        padding: 5px 8px;
+        width: max-content;
+    }
+
+    .healthyLegIndicator {
+        top: 259px;
+        left: -52px;
+    }
+
+    .humanBodyContainer img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1250px) and (max-width: 1314px) {
+    .healthyHeartBox {
+        width: min-content;
+        margin-left: -5px;
+    }
+}
+
+@media (max-width: 770px) {
+    .healthDataContainer {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .zoomInIcon {
+        top: -10px;
+        right: -30px;
+    }
+
+    .scannerBox {
+        width: 35px;
+        height: 35px;
+    }
+
+    .scannerBox::before {
+        width: 7px;
+        height: 7px;
+    }
+
+    .scannerBox::after {
+        width: 7px;
+        height: 7px;
+    }
+
+    .bottomLeft {
+        width: 7px;
+        height: 7px;
+    }
+
+    .bottomRight {
+        width: 7px;
+        height: 7px;
+    }
+
+    .healthyHeartIndicator {
+        top: 70px;
+        left: 100px;
+        gap: 3px;
+    }
+
+    .healthyHeartBox {
+        width: max-content;
+        gap: 3px;
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+    
+    .healthyLegBox {
+        width: max-content;
+        gap: 3px;
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .healthyLegIndicator {
+        top: 258px;
+        left: -34px;
+        gap: 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    .healthyHeartBox {
+        width: 90px;
+    }
+}

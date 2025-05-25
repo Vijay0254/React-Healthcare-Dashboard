@@ -1,0 +1,182 @@
+.container {
+    order: 3;
+    margin-top: 50px;
+}
+
+.activityHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activityHeader h2{
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
+
+.activityHeader p {
+    color: lightgray;
+    font-size: 13px;
+}
+
+.graphContainer {
+    padding: 15px 30px;
+}
+
+.graph {
+    display: flex;
+    gap: 15px;
+    height: 100px;
+}
+
+.eachBar {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.daysContainer {
+    display: flex;
+    padding: 10px 6px;
+    gap: 62px;
+    align-items: center;
+    color: #bfc3c9;
+    font-size: 14px;
+}
+
+@media (min-width: 1315px) and (max-width: 1505px) {
+    .graph {
+        gap: 10px;
+    }
+
+    .daysContainer {
+        gap: 35px;
+    }
+
+    .graphContainer {
+        padding: 15px 10px;
+    }
+}
+
+@media (min-width: 1250px) and (max-width: 1315px) {
+    .graph {
+        gap: 8px;
+    }
+
+    .daysContainer {
+        gap: 26px;
+    }
+
+    .graphContainer {
+        padding: 15px 5px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 937px) {
+    .graph {
+        gap: 13px;
+    }
+
+    .daysContainer {
+        gap: 53px;
+    }
+
+    .graphContainer {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 820px) {
+    .graph {
+        gap: 10px;
+    }
+
+    .daysContainer {
+        gap: 35px;
+    }
+
+    .graphContainer {
+        padding: 15px 7px;
+    }
+}
+
+@media (min-width: 682px) and (max-width: 721px) {
+    .graph {
+        gap: 8px;
+    }
+
+    .daysContainer {
+        gap: 26px;
+    }
+
+    .graphContainer {
+        padding: 15px 7px;
+    }
+}
+
+@media (max-width: 559px) {
+    .graph {
+        gap: 8px;
+    }
+
+    .daysContainer {
+        gap: 26px;
+    }
+
+    .graphContainer {
+        padding: 15px 7px;
+    }
+}
+
+@media (max-width: 482px) {
+    .graph {
+        gap: 7px;
+    }
+
+    .daysContainer {
+        gap: 22px;
+    }
+
+    .graphContainer {
+        padding: 15px 7px;
+    }
+}
+
+@media (max-width: 457px) {
+    .graph {
+        gap: 6px;
+    }
+
+    .daysContainer {
+        gap: 16px;
+    }
+
+    .graphContainer {
+        padding: 15px 0px;
+    }
+}
+
+@media (max-width: 403px) {
+    .graph {
+        gap: 5.5px;
+    }
+
+    .daysContainer {
+        gap: 18px;
+        font-size: 13px;
+        margin-left: -2px;
+    }
+    .graphContainer {
+        padding: 15px 0px;
+        margin-left: -5px;
+    }
+    .activityHeader p {
+        font-size: 10px;
+        padding-right: 3px;
+    }
+}

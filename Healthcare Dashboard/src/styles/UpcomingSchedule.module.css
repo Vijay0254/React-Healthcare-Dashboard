@@ -1,0 +1,52 @@
+.container {
+    order: 4;
+    margin-top: -100px;
+}
+
+.container h1 {
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
+
+.eachDayContainer {
+    padding-top: 25px;
+}
+
+.eachDayContainer h3 {
+    color: #9293a2;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.appointmentContainer {
+    display: flex;
+    gap: 22px;
+    padding-left: 2px;
+}
+
+@media (max-width: 1250px) {
+    .container {
+        margin-top: 0;
+    }
+    .appointmentContainer {
+        padding-left: 2px;
+    }
+}
+
+@media (max-width: 555px) {
+    .appointmentContainer { 
+        flex-direction: column;
+        padding-right: 30px;
+        padding-left: 5px;
+        gap: 12px;
+    }
+} 
+
+@media (min-width: 682px) and (max-width: 724px) {
+    .appointmentContainer {
+        padding-left: 0px;
+        gap: 7px;
+        margin-left: -10px;
+    }
+
+}

@@ -1,0 +1,56 @@
+.healthDataContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.healthData {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.healthDataHeader {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.healthDataHeader h1 {
+    font-size: 20px;
+}
+
+.healthDataHeader img {
+    width: 45px;
+}
+
+.healthData p {
+    color: lightgray;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.colorBox {
+    width: 120%;
+    height: 8px;
+    border-radius: 10px;
+    margin-left: 7px;
+    background-color: #dee1e8;
+}
+
+@media (min-width: 900px) and (max-width: 1250px) {
+    .healthDataContainer {
+        width: 30%
+    }
+}
+
+@media (max-width: 750px) { 
+    .healthDataContainer {
+        width: 90%;
+        gap: 30px;
+    }
+
+    .colorBox {
+        width: auto;
+    }
+}

@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+html, body, #root {
+  background-color: #e0ffff;
+}
+
+:root {
+  --primary-color: #0ed9f8;
+  --secondary-color: #3632a9;
+  --tertiary-color: #000849;
+}

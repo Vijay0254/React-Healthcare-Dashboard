@@ -1,0 +1,172 @@
+.container {
+    order: 2;
+    color: var(--tertiary-color);
+}
+
+.monthContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monthContainer h1 {
+    font-size: 20px;
+}
+
+.monthNavContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.calendarContainer {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rowContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+    gap: 20px;
+}
+
+.date {
+    margin-top: -15px;
+    font-size: 25px;
+}
+
+.exceptDate {
+    font-size: 12px;
+}
+
+.itemContainer {
+    border-radius: 10px;
+    padding: 7px 10px;
+    font-weight: 700;
+    position: relative;
+}
+
+.twoTimeLeftItemContainer {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 7px 10px;
+    font-weight: 700;
+    position: relative;
+}
+
+.twoTimeRightItemContainer {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 7px 10px;
+    font-weight: 700;
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    translate: -50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.twoTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gapColor {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background-color: #adafda;
+    width: 30px;
+    height: 30px;
+}
+
+.appointmentContainer {
+    display: flex;
+    gap: 17px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+
+@media (min-width: 866px) and (max-width: 1250px) {
+    .gapColor {
+        width: 80px;
+    }
+}
+
+@media (max-width: 770px) {
+    .date {
+        font-size: 17px;
+    }
+
+    .exceptDate {
+        font-size: 10px;
+    }
+
+    .rowContainer {
+        gap: 10px
+    }
+
+    .gapColor {
+        height: 27.7px;
+        left: 47px;
+    }
+
+    .appointmentContainer {
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 682px) {
+    .container {
+        margin-left: -5px;
+    }
+    .calendarContainer {
+        margin-left: -12px;
+        margin-right: 0;
+        gap: 10px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+
+    .exceptDate {
+        font-size: 8px;
+    }
+
+    .rowContainer {
+        gap: 0px
+    }
+
+    .gapColor {
+        height: 25px;
+        left: 40px;
+    }
+}
+
+@media (min-width: 558px) and (max-width: 638px) {
+    .gapColor {
+        width: 40px;
+    }
+}
+
+@media (max-width: 558px) {
+    .appointmentContainer {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 20px;
+    }
+}
